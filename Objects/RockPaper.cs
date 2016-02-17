@@ -5,6 +5,28 @@ namespace RockPaperCookout
 {
   public class RockPaperScissors
   {
+    public string ComputerBattle()
+    {
+      string player2;
+      Random rnd = new Random();
+      int randomNumber = rnd.Next(1,4);
+      RockPaperScissors newGame = new RockPaperScissors();
+
+      if (randomNumber == 1)
+      {
+        player2 = "rock";
+      }
+      else if (randomNumber == 2)
+      {
+        player2 = "paper";
+      }
+      else
+      {
+        player2 = "scissors";
+      }
+      return player2;
+    }
+
     public string DoBattle(string player1, string player2)
     {
       if (player1 == player2)

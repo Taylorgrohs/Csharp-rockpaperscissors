@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-     <link href="../Content/styles.css" rel="stylesheet" type="text/css">
+    <link href="../Content/bootstrap.css" rel="stylesheet">
+    <link href="../Content/styles.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
     <title>Rock Paper Scissors</title>
   </head>
   <body>
-    <h1>Lets play a game!</h1>
-    <form action="/winner" method="post">
-      <label for="player1">Player 1</label>
-      <select name="player1">
-        <option>Please Select an option</option>
-        <option value="rock">Rock</option>
-        <option value="paper">Paper</option>
-        <option value="scissors">Scissors</option>
-      </select>
-      <label for="player2">Player 2</label>
-      <select name="player2">
-        <option>Please Select an option</option>
-        <option value="rock">Rock</option>
-        <option value="paper">Paper</option>
-        <option value="scissors">Scissors</option>
-      </select>
-      <button type="submit">Play Ball</button>
-    </form>
+    <div class="jumbotron">
+      <h1>Lets play a game!</h1>
+    </div>
+    <div>
+      <p><a href="/2player">Play against a friend!</a></p>
+      <p><a href="/computer">Play against a computer!</a></p>
+    </div>
+
   </body>
 </html>
