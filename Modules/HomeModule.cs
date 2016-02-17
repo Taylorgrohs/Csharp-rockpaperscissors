@@ -18,7 +18,7 @@ namespace TheRocksCookout
         RockPaperScissors newGame = new RockPaperScissors();
         string winner = newGame.DoBattle(player1, player2);
 
-        return View["results.cshtml", winner];
+        return View["winner.cshtml", winner];
       };
     }
   }

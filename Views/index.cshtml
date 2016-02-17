@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link href="../Content/styles.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <h1>Lets play a game!</h1>
+    <form action="/winner" method="post">
+      <label for="player1">Player 1</label>
+      <select name="player1">
+        <option>Please Select an option</option>
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+      </select>
+      <label for="player2">Player 2</label>
+      <select name="player2">
+        <option>Please Select an option</option>
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+      </select>
+      <button type="submit">Play Ball</button>
+    </form>
+  </body>
+</html>
